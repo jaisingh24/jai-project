@@ -8,9 +8,14 @@ pipeline {
               git url: 'https://github.com/jaisingh24/jai-project.git'
             }
         }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('build') {
             steps {
-                echo 'building'
+                sh 'gulp build'
             }
         }
         stage('deploy') {
