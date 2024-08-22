@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        EC2_HOST='54.162.178.100'
+    }
 
     stages {
         stage('check') {
