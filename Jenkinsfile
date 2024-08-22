@@ -1,11 +1,11 @@
-pipeline {
+opipeline {
     agent any
    
 
     stages {
         stage('checkout') {
             steps {
-              git url: 'https://github.com/jaisingh24/jai-project.git'
+              echo ' checking'
             }
         }
         stage('Install Dependencies') {
