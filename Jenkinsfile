@@ -1,14 +1,11 @@
 pipeline {
     agent any
-    environment{
-        EC2_HOST='54.162.178.100'
-        DEPLOY_PATH='54.162.178.100'
-    }
+   
 
     stages {
-        stage('check') {
+        stage('checkout') {
             steps {
-                echo 'Hello World'
+              git url: 'https://github.com/jaisingh24/jai-project.git'
             }
         }
         stage('build') {
