@@ -11,6 +11,11 @@ environment{
                 git branch:'main',url:'https://github.com/jaisingh24/jai-project.git'
             }
         }
+        stage('install dependencies'){
+            steps {
+                sh'npn install'
+            }
+        }
         
     }
 }
