@@ -1,29 +1,11 @@
-opipeline {
+pipeline {
     agent any
-   
 
     stages {
-        stage('checkout') {
+        stage('Hello') {
             steps {
-              echo ' checking'
+                echo 'Hello World'
             }
         }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('build') {
-            steps {
-                sh 'gulp build'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploying'
-            }
-        }
-        
-        
     }
 }
