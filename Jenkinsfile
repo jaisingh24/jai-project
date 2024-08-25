@@ -6,10 +6,11 @@ environment{
     REMOTE_USER='ubuntu'
 }
     stages {
-        stage('Hello') {
+        stage('checkout code') {
             steps {
-                echo 'Hello World'
+                git branch:'main',url:'https://github.com/jaisingh24/jai-project.git'
             }
         }
+        
     }
 }
