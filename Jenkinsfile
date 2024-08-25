@@ -22,9 +22,12 @@ environment{
                             apt run build
                             pm2 restart all
                         EOF
+                        """
+                        
             }
         }
         
+    }
     }
     }
 
