@@ -1,3 +1,5 @@
+public ip: 54.162.178.100
+
 # jai-project
 
 PRE-REQUIREMENTS
